@@ -1,0 +1,51 @@
+.heading {
+  margin: 0;
+  color: var(--text-color);
+}
+
+/* Clases específicas para cada nivel de encabezado */
+.h1{
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.description {
+  font-size: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos responsivos para dispositivos más grandes */
+@media (min-width: 768px) {
+
+  .h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .h3 {
+    font-size: 20px;
+    line-height: 24px; 
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}

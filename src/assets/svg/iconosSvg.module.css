@@ -1,0 +1,28 @@
+.iconCheck {
+    width: 20px; /* Tamaño por defecto */
+    height: 20px; /* Tamaño por defecto */
+    min-width: 20px; /* Tamaño mínimo */
+    min-height: 20px; /* Tamaño mínimo */
+    flex-shrink: 0; /* Evita que el ícono se reduzca si está en un contenedor flexible */
+  }
+  
+  .iconStart {
+    width: 10px; /* Tamaño por defecto */
+    height: 10px; /* Tamaño por defecto */
+    min-width: 10px; /* Tamaño mínimo */
+    min-height: 10px; /* Tamaño mínimo */
+    flex-shrink: 0; /* Evita que el ícono se reduzca si está en un contenedor flexible */
+  }
+  /* Destock */
+  @media (min-width: 768px) {
+    .iconStart {
+      width: 15px; /* Tamaño por defecto */
+      height: 15px; /* Tamaño por defecto */
+      min-width: 15px; /* Tamaño mínimo */
+      min-height: 15px; /* Tamaño mínimo */
+      transform-origin: center; 
+      transform: scale(1.55); /* Escala el contenido SVG dentro del contenedor */
+      flex-shrink: 0; /* Evita que el ícono se reduzca si está en un contenedor flexible */
+      object-fit: containx;
+    }
+  }

@@ -1,0 +1,109 @@
+.footer {
+    display: grid;
+    grid-template-areas: "link" "content";
+    padding: 32px 28px;
+    grid-gap: 50px;
+    background-color: #F4F4F4;
+    z-index: 1;
+    transition: grid-gap 0.3s ease, background-color 0.3s ease, width 0.3s ease; 
+}
+
+.contentFooter {
+    display: grid;
+    grid-area: content;
+    justify-items: center;
+    gap: 24px;
+    padding: 0px 8px;
+    text-align: center;
+    transition: width 0.3s ease, justify-items 0.3s ease, text-align 0.3s ease;
+}
+
+.socialIcon {
+    display: flex;
+    gap: 20px;
+}
+
+.sectionsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: link;
+    grid-gap: clamp(20%, 20px, 32px);
+    transition: grid-gap 0.3s ease; 
+}
+
+.sectionsGrid section header {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--text-color);
+    white-space: nowrap;
+    width: 100%;
+}
+
+.listLink {
+    color: var(--very-gray-color) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    white-space: nowrap;
+    transition: white-space 0.3s ease; 
+}
+
+.descriptionFooter{
+    hyphens: auto;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: 250px 1fr;
+        grid-template-areas: "content link";
+        /* background-color: rgb(157, 127, 255); */
+        grid-gap: clamp(40px, 5vw, 150px);
+        width: 100%;
+        margin: auto;
+        padding: 60px 0%;
+    }
+
+    .listLink {
+        white-space: wrap;
+    }
+    .sectionsGrid section header {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        grid-template-columns: 250px 1fr;
+        grid-template-areas: "content link";
+        /* background-color: aquamarine; */
+        grid-gap: clamp(40px, 5vw, 150px);
+        width: 100%;
+        padding: 60px 15%;
+        margin: auto;
+    }
+
+    .sectionsGrid {
+        grid-gap: clamp(10%, 15%, 90px);
+    }
+
+    .contentFooter {
+        width: clamp(250px, 60%, 320px);
+        justify-items: left;
+        text-align: left;
+    }
+
+    .sectionsGrid section header {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .listLink {
+        white-space: nowrap;
+    }
+
+}
